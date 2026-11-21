@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Scoop Story</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <nav class="navbar">
+        <h2 class="logo">🍦 The Scoop Story</h2>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#flavours">Flavours</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+    </nav>
+</header>
+
+<!-- Home Section -->
+<section class="hero" id="home">
+
+    <div class="hero-text">
+        <p class="tagline">HAPPINESS IN EVERY SCOOP</p>
+
+        <h1>Cool Down With Our Creamy Creations!</h1>
+
+        <p>
+            Enjoy delicious, fresh and creamy ice creams
+            made to bring a smile to your face.
+        </p>
+
+        <a href="#flavours" class="main-btn">Explore Flavours</a>
+
+        <div class="stats">
+            <div>
+                <h2>12+</h2>
+                <p>Flavours</p>
+            </div>
+
+            <div>
+                <h2>100%</h2>
+                <p>Happiness</p>
+            </div>
+
+            <div>
+                <h2>Fresh</h2>
+                <p>Every Day</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800" alt="Ice cream">
+    </div>
+
+</section>
+
+<!-- Promotional Section -->
+<section class="offer">
+    <div>
+        <p> A LITTLE SWEETNESS GOES A LONG WAY </p>
+        <h2>Life is Better With Ice Cream!</h2>
+        <p>Make every moment special with your favourite scoop.</p>
+    </div>
+    <span>🍨</span>
+</section>
+
+<!-- Flavours Section -->
+<section class="flavours-section" id="flavours">
+
+    <p class="tagline">OUR DELICIOUS COLLECTION</p>
+    <h1>Discover Your Favourite Flavour</h1>
+
+    <div class="filter-row">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="classic">Classic</button>
+        <button class="filter-btn" data-category="fruit">Fruit</button>
+        <button class="filter-btn" data-category="special">Special</button>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-box">
+        <input type="text" id="searchInput"
+        placeholder="Search your favourite flavour...">
+        <span>🔍</span>
+    </div>
+
+    <!-- Ice Cream Cards -->
+    <div class="flavour-grid">
+
+        <div class="flavour-card" data-category="classic">
+            <img src="https://images.unsplash.com/photo-1560008581-09826d1de69e?w=500" alt="Vanilla ice cream">
+            <div class="card-info">
+                <h3>Vanilla Dream</h3>
+                <p>Classic creamy vanilla flavour.</p>
+                <div class="product-bottom">
+                    <b>₹99</b>
+                    <button class="add-btn">Add +</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flavour-card" data-category="special">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500" alt="Chocolate ice cream">
+            <div class="card-info">
+                <h3>Choco Bliss</h3>
+                <p>Rich and delicious chocolate.</p>
+                <div class="product-bottom">
+                    <b>₹119</b>
+                    <button class="add-btn">Add +</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flavour-card" data-category="fruit">
+            <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=500" alt="Strawberry ice cream">
+            <div class="card-info">
+                <h3>Strawberry Swirl</h3>
+                <p>Sweet strawberry goodness.</p>
+                <div class="product-bottom">
+                    <b>₹109</b>
+                    <button class="add-btn">Add +</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flavour-card" data-category="classic">
+            <img src="https://images.unsplash.com/photo-1501446529957-6226bd447c46?w=500" alt="Pistachio ice cream">
+            <div class="card-info">
+                <h3>Pista Paradise</h3>
+                <p>Nutty and creamy pistachio.</p>
+                <div class="product-bottom">
+                    <b>₹129</b>
+                    <button class="add-btn">Add +</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flavour-card" data-category="fruit">
+            <img src="https://images.unsplash.com/photo-1488900128323-21503983a07e?w=500" alt="Berry ice cream">
+            <div class="card-info">
+                <h3>Berry Sundae</h3>
+                <p>Fresh and fruity berry flavour.</p>
+                <div class="product-bottom">
+                    <b>₹159</b>
+                    <button class="add-btn">Add +</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flavour-card" data-category="special">
+            <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=500" alt="Cookie ice cream">
+            <div class="card-info">
+                <h3>Cookie Crunch</h3>
+                <p>Creamy ice cream with cookies.</p>
+                <div class="product-bottom">
+                    <b>₹149</b>
+                    <button class="add-btn">Add +</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flavour-card" data-category="fruit">
+            <img src="https://images.unsplash.com/photo-1517093157656-b9eccef91cb1?w=500" alt="Mango ice cream">
+            <div class="card-info">
+                <h3>Mango Magic</h3>
+                <p>Refreshing mango flavour.</p>
+                <div class="product-bottom">
+                    <b>₹119</b>
+                    <button class="add-btn">Add +</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flavour-card" data-category="special">
+            <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?w=500" alt="Oreo ice cream">
+            <div class="card-info">
+                <h3>Oreo Overload</h3>
+                <p>Chocolate cookies and cream.</p>
+                <div class="product-bottom">
+                    <b>₹149</b>
+                    <button class="add-btn">Add +</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flavour-card" data-category="classic">
+            <img src="https://images.unsplash.com/photo-1501446529957-6226bd447c46?w=500" alt="Butterscotch ice cream">
+            <div class="card-info">
+                <h3>Butterscotch Bliss</h3>
+                <p>Sweet and crunchy butterscotch.</p>
+                <div class="product-bottom">
+                    <b>₹129</b>
+                    <button class="add-btn">Add +</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flavour-card" data-category="fruit">
+            <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=500" alt="Blueberry ice cream">
+            <div class="card-info">
+                <h3>Blueberry Dream</h3>
+                <p>Delicious blueberry sweetness.</p>
+                <div class="product-bottom">
+                    <b>₹139</b>
+                    <button class="add-btn">Add +</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flavour-card" data-category="special">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500" alt="Coffee ice cream">
+            <div class="card-info">
+                <h3>Coffee Craze</h3>
+                <p>A perfect coffee flavoured treat.</p>
+                <div class="product-bottom">
+                    <b>₹139</b>
+                    <button class="add-btn">Add +</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flavour-card" data-category="special">
+            <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=500" alt="Red velvet ice cream">
+            <div class="card-info">
+                <h3>Red Velvet Romance</h3>
+                <p>Rich and creamy red velvet.</p>
+                <div class="product-bottom">
+                    <b>₹159</b>
+                    <button class="add-btn">Add +</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Shopping Basket -->
+<section class="cart-section">
+    <h2>🛒 Your Sweet Basket</h2>
+    <p id="cartStatus">Your basket is empty!</p>
+    <h3 id="totalPrice">Total: ₹0</h3>
+    <button id="checkoutBtn" class="main-btn">Place My Order</button>
+</section>
+
+<!-- About Section -->
+<section class="about-section" id="about">
+    <div>
+        <p class="tagline">OUR LITTLE STORY</p>
+        <h1>Made With Love, Served With Happiness</h1>
+        <p>
+            At The Scoop Story, we believe that every scoop
+            should bring happiness. We offer a variety of
+            delicious flavours for every ice cream lover.
+        </p>
+    </div>
+
+    <div class="about-emoji">🍦🍨</div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+    <p class="tagline">WE WOULD LOVE TO HEAR FROM YOU</p>
+    <h1>Let's Stay In Touch!</h1>
+    <p>Email: thescoopstory@gmail.com</p>
+    <p>Phone: +91 98765 43210</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <h2>🍦 The Scoop Story</h2>
+    <p>Sweet moments, one scoop at a time!</p>
+    <p>© 2026 The Scoop Story. All Rights Reserved.</p>
+</footer>
+
+<!-- Product Details Popup -->
+<div class="product-modal" id="productModal">
+
+    <div class="modal-content">
+        <button class="close-modal" id="closeModal">&times;</button>
+
+        <img id="modalImage" src="" alt="Selected ice cream">
+
+        <div class="modal-details">
+            <p class="tagline">A LITTLE SCOOP OF HAPPINESS</p>
+            <h2 id="modalName">Ice Cream Name</h2>
+            <p id="modalDescription">Delicious and creamy ice cream.</p>
+            <h3 id="modalPrice">₹99</h3>
+            <button class="main-btn" id="modalAdd">Add To Basket +</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
